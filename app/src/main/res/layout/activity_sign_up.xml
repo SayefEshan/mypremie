@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#68efad"
+    android:padding="15dp"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/textViewSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="রেজিস্ট্রেশন "
+        android:textSize="30dp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:hint="নামের প্রথম অংশ"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewSignUp"
+        android:layout_below="@+id/editTextFirstName"
+        android:hint="নামের শেষাংশ"
+        android:inputType="textPersonName"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/editTextDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewSignUp"
+        android:layout_below="@+id/editTextLastName"
+        android:hint="জন্ম তারিখ  (তারিখ-মাস-বছর)"
+        android:inputType="date"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewSignUp"
+        android:layout_below="@+id/editTextDateInput"
+        android:hint="মোবাইল নাম্বার"
+        android:inputType="phone"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewSignUp"
+        android:layout_below="@+id/editTextPhoneNumber"
+        android:hint="ই-মেইল"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_centerVertical="true"
+        android:hint="পাসওয়ার্ড"
+        android:inputType="textPassword"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewSignUp"
+        android:layout_below="@+id/editTextPassword"
+        android:hint="পাসওয়ার্ড নিশ্চিত করুন"
+        android:inputType="textPassword"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp"
+        android:background="@drawable/mybutton"
+        android:text="জমা দিন"
+        android:onClick="saveInfo"
+        android:textColor="#26ae90"
+        android:textSize="18dp" />
+
+</RelativeLayout>

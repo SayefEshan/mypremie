@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_drawerChildInfo"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Child Info" />
+        <item
+            android:id="@+id/nav_drawerNearByChildcare"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Nearby Childcare" />
+        <item
+            android:id="@+id/nav_drawerGuideline"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Guideline" />
+        <item
+            android:id="@+id/nav_drawerAboutus"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="About Us" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_drawerLogout"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Logout" />
+
+        </menu>
+    </item>
+
+</menu>

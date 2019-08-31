@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#68efad"
+    android:padding="10dp"
+    tools:context=".babyRegistration">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="শিশু নিবন্ধন"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/editTextBabyname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="শিশুর নাম"
+            android:layout_below="@id/textViewBanner"
+            android:inputType="text"
+            android:paddingTop="40dp"/>
+
+        <EditText
+            android:id="@+id/editTextBabyBirthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="জন্ম তারিখ"
+            android:layout_below="@id/editTextBabyname"
+            android:paddingTop="22dp"/>
+
+        <EditText
+            android:id="@+id/editTextBabyGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextBabyBirthday"
+            android:hint="লিঙ্গ (ছেলে,মেয়ে অথবা অন্যান্য)"
+            android:paddingTop="22dp"/>
+        <EditText
+            android:id="@+id/editTextBabyBirthWeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextBabyGender"
+            android:hint="জন্মের সপ্তাহ "
+            android:paddingTop="22dp"/>
+        <EditText
+            android:id="@+id/editTextBabyheadSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextBabyBirthWeek"
+            android:hint="মাথার সাইজ"
+            android:paddingTop="22dp"/>
+        <EditText
+            android:id="@+id/editTextBabyheight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextBabyheadSize"
+            android:hint="উচ্চতা "
+            android:paddingTop="22dp"/>
+
+        <EditText
+            android:id="@+id/editTextBabyWight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextBabyheight"
+            android:hint="ওজন"
+            android:paddingTop="22dp" />
+        <EditText
+            android:id="@+id/editTextBabySpecialCase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="বিশেষ লক্ষণ"
+            android:layout_below="@id/editTextBabyWight"
+            android:paddingTop="22dp"/>
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextBabySpecialCase"
+            android:background="@drawable/mybutton"
+            android:text="জমা দিন"
+            android:textColor="#26ae90"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:onClick="saveBabyData"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

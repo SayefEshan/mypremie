@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#68efad"
+    android:padding="15dp"
+    tools:context="nsu.sharif.mypremie.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="220dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:hint="ব্যবহারকারীর নাম  বা ফোন"
+        android:inputType="textEmailAddress|textPersonName"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editTextPasswordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextUserName"
+        android:layout_below="@+id/editTextUserName"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="পাসওয়ার্ড"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonlogInButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPasswordInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="লগ ইন করুন"
+        android:textAppearance="@android:style/TextAppearance.Holo"
+        android:visibility="visible"
+        android:background="@drawable/mybutton"
+        android:textColor="#26ae90"
+        android:shadowColor="#c9c9c9"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonPasswordReset"
+        android:layout_alignBottom="@+id/buttonPasswordReset"
+        android:layout_alignStart="@+id/editTextPasswordInput"
+        android:layout_marginStart="50dp"
+        android:text="পাসওয়ার্ড ভুলে গেছেন ?"
+        android:textColor="#4773aa"
+        android:textSize="17dp"/>
+
+    <Button
+        android:id="@+id/buttonPasswordReset"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonlogInButton"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/textView"
+        android:text="এখানে ক্লিক করুন "/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonPasswordReset"
+        android:layout_centerHorizontal="true"
+        android:text="অথবা"
+        android:textColor="#4773aa"
+        android:textSize="17dp"/>
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:padding="20dp"
+        android:layout_below="@id/textView2"/>
+
+    <Button
+        android:id="@+id/buttonNewAccountCreate"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/mybutton"
+        android:text="নতুন অ্যাকাউন্ট তৈরি করুন"
+        android:textColor="#26ae90"
+        android:textSize="18dp"
+        android:onClick="createAccount"/>
+
+</RelativeLayout>
