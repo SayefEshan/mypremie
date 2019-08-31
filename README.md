@@ -1,4 +1,4 @@
-# mypremie
+# Premature Baby Care Service
 
 ABSTRACT:
 Women in Bangladesh does not get a proper guidance in the preterm or post term pregnancies. It becomes more complicated when the newborn baby born as a premature baby. In the rural areas parents face worse conditions. Those mother take care of their child as normal child. For a parent there is no easy way to get this kind of help. In this paper, we report on a qualitative study conducted in various locations of Bangladesh, especially in the rural areas where mother are not conscious about this. Giving birth a premature baby is really terrifying, shocking and sad and when you cannot find any small help quickly it becomes really worse. In Bangladesh here is no web based platform to help the parents. Besides the research, we want to make a web based platform which language will be Bangla to help the parents of Bangladesh.
